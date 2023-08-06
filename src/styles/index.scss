@@ -3,6 +3,7 @@
 @use 'TodoList' as *;
 @use 'TodoItem' as *;
 @use 'TodoButton' as *;
+@use 'TodosLoading' as *;
 
 body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
