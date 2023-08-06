@@ -1,0 +1,58 @@
+@use 'variables' as *;
+
+li {
+    // border: 1px solid red;
+    height: 60px;
+    width: auto;
+    background: $tasksColor;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 2px 10px 2px 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    & .divi {
+        display: flex;
+        align-items: center;
+        // border: 1px solid red;
+    }
+    & p {
+        // border: 1px solid red;
+        margin-left: 10px;
+    }
+    
+}
+
+.TodoItem-p--complete {
+    text-decoration: line-through;
+}
+
+.Icon {
+    cursor: pointer;
+    height:45px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    // border: 1px solid red;
+    justify-content: center;
+
+    &-check {
+        background: url(../svg/CheckDisable.svg);
+        background-size: 45px 45px;
+    }
+    &-check--active {
+        background: url(../svg/CheckOn.svg);
+        transition: .3s;
+    }
+    &-delete {
+        background: url(../svg/Cross.svg) no-repeat;
+        background-size: 30px 30px;
+        background-position: center;
+        &:hover {
+            background: url(../svg/CrossRed.svg) no-repeat;
+            background-size: 30px 30px;
+            background-position: center;
+        }
+    }
+}

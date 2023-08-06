@@ -1,0 +1,37 @@
+@use 'variables' as *;
+@use 'Search' as *;
+@use 'TodoList' as *;
+@use 'TodoItem' as *;
+@use 'TodoButton' as *;
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: $background;
+}
+
+h1, p, span {
+    color: $White;
+}
+
+.todoCounter {
+    // border: 1px solid red;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 60px 0 30px 0;
+    text-align: center;
+    & span {
+        font-weight: 900;
+        color: $completedButton;
+        &:last-child {
+            color: $plusButton;
+        }
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    // border: 1px solid red;
+    margin: 0 30px 0 30px;
+}

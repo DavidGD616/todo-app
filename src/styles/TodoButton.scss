@@ -1,0 +1,14 @@
+@use 'variables' as *;
+
+button {
+    // border: 1px solid red;
+    height: 65px;
+    width: 100vw;
+    background: $plusButton;
+    color: $White;
+    border: none;
+    font-size: 40px;
+    font-weight: 900;
+    position: fixed;
+    bottom: 0;
+}
