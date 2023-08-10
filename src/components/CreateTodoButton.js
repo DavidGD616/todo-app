@@ -1,15 +1,15 @@
-function CreateTodoButton() {
+import React from "react";
+
+function CreateTodoButton({ setOpenModal }) {
     return (
       <button className="CreateTodoButton"
       onClick={
-        (event) => {
-          console.log('Le diste click')
-          console.log(event)
-          console.log(event.target)
+        () => {
+          setOpenModal(state => !state);
         }
         }>
         +
-        </button>
+      </button>
     );
   }
 

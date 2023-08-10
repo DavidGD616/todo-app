@@ -2,6 +2,7 @@
 
 button {
     // border: 1px solid red;
+    cursor: pointer;
     height: 65px;
     width: 100vw;
     background: $plusButton;
@@ -11,4 +12,7 @@ button {
     font-weight: 900;
     position: fixed;
     bottom: 0;
+    &:hover {
+        background: #976dcb;
+    }
 }

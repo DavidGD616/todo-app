@@ -1,0 +1,60 @@
+@use 'variables' as *;
+
+.ModalBackground {
+    background-color: rgba(32,35,41,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &-box {
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        background: $tasksColor;
+        border-radius: 10px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        &__h3 {
+            font-size: 2rem;
+        }
+        &__buttons {
+            // border: 1px solid red;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+            &-a {
+                text-decoration: none;
+                color: $White;
+                font-size: 1.2rem;
+                font-weight: bold;
+                cursor: pointer;
+                &:nth-child(1):hover {
+                    color: #ff0000;
+                }
+                &:nth-child(2):hover {
+                    color: $completedButton;
+                }
+            }
+        }
+    }
+}
+
+.addToDoinput {
+    border: 1px solid #303030;
+    background: #303030;
+    width: 60vw;
+    height: auto;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    border-radius: 10px;
+    outline: none;
+    color: $White;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
