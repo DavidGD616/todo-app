@@ -8,6 +8,7 @@ import { TodosLoading } from "../components/TodosLoading";
 import { TodosError } from "../components/TodosError";
 import { EmptyTodos } from "../components/EmptyTodos";
 import { Modal } from "../components/Modal";
+import { TodoForm } from "../components/TodoForm";
 import { TodoContext } from "../context";
 
 function AppUI() {
@@ -54,7 +55,9 @@ function AppUI() {
           />
 
           {openModal && (
-            <Modal />
+            <Modal>
+              <TodoForm />
+            </Modal>
           )}
 
         </>
