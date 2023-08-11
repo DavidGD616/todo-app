@@ -4,13 +4,13 @@
     // border: 1px solid red;
     cursor: pointer;
     height: 65px;
-    width: 100vw;
+    width: 100%;
     background: $plusButton;
     color: $White;
     border: none;
     font-size: 40px;
     font-weight: 900;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     &:hover {
         background: #976dcb;
